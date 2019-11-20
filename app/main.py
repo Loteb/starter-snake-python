@@ -63,7 +63,7 @@ def move():
     fieldWidth = jsonData['board']['width']
     snakeBodyX = jsonData['board']['snakes']['x']
     snakeBodyY = jsonData['board']['snakes']['Y']
-    print(fieldHeight)
+    print('/n'+fieldHeight+'/n')
     return move_response(direction)
 
 
