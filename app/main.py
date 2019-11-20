@@ -58,7 +58,6 @@ def move():
 
     directions = ['up', 'down', 'left', 'right']
     direction = random.choice(directions)
-    direction=directions[2]
     jsonData = json.loads(data)
     fieldHeight = jsonData['board']['height']
     fieldWidth = jsonData['board']['width']
