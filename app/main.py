@@ -57,8 +57,13 @@ def move():
     print(json.dumps(data))
 
     directions = ['up', 'down', 'left', 'right']
-    direction = random.choice(directions)
-
+    
+    direction=directions[2]
+    jsonData = json.loads(data)
+    fieldHeight = jsonData['board']['height']
+    fieldWidth = jsonData['board']['width']
+    snakeBodyX = jsonData['board']['snakes']['x']
+    snakeBodyY = jsonData['board']['snakes']['Y']
     return move_response(direction)
 
 
